@@ -1,0 +1,2923 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Lobster&family=Nunito&family=Sen:wght@700&family=Ubuntu:wght@500&display=swap');
+
+/* Todos los elementos */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Contenedor body pagina index */
+
+.index {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "seccion-home"
+        "footer";
+    grid-template-rows: 55px 82% 80px;
+    grid-template-columns: 100%;
+}
+
+
+/* HEADER */
+.header {
+    grid-area: header;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+/* LOGO YouAreBody */
+.header__img {
+    justify-content: flex-end;
+    align-self: center;
+}
+
+/* Nav */
+.header__nav {
+    align-self: center;
+}
+
+.boton-menu {
+    margin-right: 30px;
+    font-size: 25px;
+    color: black;
+    cursor: pointer;
+    display: none;
+}
+
+ul.show {
+    top: 65px;
+}
+
+.header__nav-ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header__nav-ul-li {
+    margin: 0 10px;
+    list-style: none;
+    font-size: x-small;
+    text-align: center;
+}
+
+.header__nav-ul-li-a {
+    text-decoration: none;
+    color: black;
+}
+
+/* HEADER FIN */
+
+/* FOOTER */
+.footer {
+    grid-area: footer;
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__p {
+    font-size: x-small;
+    text-align: center;
+}
+
+.footer__p-a {
+    text-decoration: none;
+}
+
+/*FOOTER FIN*/
+
+/* INDEX.HTML */
+/* SECCION HOME */
+/* IMAGEN DE FONDO */
+.seccion-home {
+    grid-area: seccion-home;
+    background-image: url('../multimedia/image/grupo-amigos-adolescente-concepto-trabajo-equipo-unidad-cancha-baloncesto_53876-20727.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* PARRAFO TITULO */
+.seccion-home__pconectate {
+    font-size: 3em;
+    padding-top: 1em;
+    align-self: center;
+    color: black;
+    text-shadow: .5px .5px 30px white;
+}
+
+/* TEXTO PARRAFO */
+.seccion-home__pconectate-parrafo {
+    font-size: 1em;
+    align-self: center;
+    margin: 30px 10%;
+    text-shadow: .5px .5px 10px white;
+}
+
+/*CAJA CONTENEDORA NECESITAS AYUDA WHATSAPP */
+.seccion-home__div {
+    width: 250px;
+    height: 75px;
+    position: absolute;
+    bottom: .9em;
+    right: .4em;
+}
+
+/* IMAGEN WHATSAPP */
+.seccion-home__div-img {
+    width: 30%;
+}
+
+/* LINK WHATSAPP */
+.seccion-home__div-img-a {
+    display: inline-block;
+    font-size: 1em;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    text-shadow: .5px .5px 25px white;
+}
+
+/* INDEX.HTML FIN */
+/* CONOCENOSCONTACTANOS.HTML */
+/* Contenedor body pagina conocenos-contactanos */
+
+.conocenos-contactanos {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "seccion-conocenos"
+        "seccion-contactanos"
+        "footer2";
+    grid-template-rows: 55px 58% 700px 70px;
+    grid-template-columns: 100%;
+}
+
+/* CAJA CONTENEDORA NECESITAS AYUDA WHATSAPP */
+.conocenos__div {
+    width: 20%;
+    position: fixed;
+    top: 9%;
+    right: 10px;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* IMAGEN WHATSAPP */
+.conocenos__div-img {
+    width: 30%;
+}
+
+/* LINK WHATSAPP */
+.conocenos__div-img-a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    text-shadow: 0px 0px 9px white;
+}
+
+/* IMAGENES Y PARRAFOS */
+/* CAJA CONTENEDORA DE IMAGEN 1 + TITULO + PARRAFO */
+.conocenos {
+    grid-area: seccion-conocenos;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 7% 0 7%;
+}
+
+.contenedor-imagen {
+    height: 100%;
+}
+
+.contenedor-imagen-1 {
+    display: flex;
+}
+
+.conocenos-imagen-1 {
+    width: 50%;
+    position: relative;
+    top: 10%;
+    left: 5%;
+    z-index: 10;
+    border-radius: 20px;
+}
+
+.contenedor-textos-imagen-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conocenos-imagen1-titulo {
+    font-size: 15px;
+    margin-bottom: 5%;
+    margin-left: 13%;
+}
+
+.conocenos-imagen1-parrafo {
+    font-size: smaller;
+    margin: 0 5% 5% 20%;
+}
+
+/* CAJA CONTENEDORA DE IMAGEN 2 + PARRAFO */
+
+.contenedor-imagen-2 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.conocenos-imagen-2 {
+    width: 53%;
+    position: relative;
+    bottom: 4%;
+    z-index: 5;
+    border-radius: 20px;
+}
+
+.contenedor-textos-imagen2 {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conocenos-imagen-2-titulo {
+    font-size: smaller;
+    margin-bottom: 4%;
+}
+
+
+.conocenos-imagen-2-parrafo {
+    font-size: 80%;
+    margin: 0 10% 7% 10%;
+}
+
+
+/* CAJA CONTENEDORA DE IMAGEN 3 + 3 PARRAFOS */
+
+.contenedor-imagen-3 {
+    display: flex;
+}
+
+.conocenos-imagen-3 {
+    width: 53%;
+    position: relative;
+    bottom: 15%;
+    border-radius: 20px;
+}
+
+.contenedor-textos-imagen3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 5% 6% 5%;
+}
+
+.conocenos-imagen-3-p1 {
+    font-size: smaller;
+
+}
+
+.conocenos-imagen-3-p2 {
+    font-size: smaller;
+
+}
+
+.conocenos-imagen-3-p3 {
+    font-size: smaller;
+
+}
+
+/*SECCION CONTACTANOS*/
+
+.contactanos {
+    grid-area: seccion-contactanos;
+    border-top: 1px solid black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 700px;
+}
+
+.contenedor-whatsapp-contactanos {
+    display: flex;
+    align-items: center;
+}
+
+.contactacnos__img {
+    width: 10%;
+    margin-left: 15%;
+}
+
+.contactanos__img-a {
+    text-decoration: none;
+    font-size: 160%;
+    color: rgb(63, 189, 162);
+    text-shadow: 1px 1px 1px black;
+}
+
+.contactanos__envianos-un-mensaje {
+    font-size: 150%;
+    margin-left: 40%;
+    margin-top: -20px;
+}
+
+.formulario-envianos-un-mensaje {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.nombre-apellido-asunto {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-right: 5%;
+}
+
+.texto {
+    height: 10%;
+    padding-left: 7%;
+}
+
+.enviar-mensaje {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.text-area {
+    margin-top: 4%;
+    height: 50%;
+    padding-left: 5%;
+}
+
+.boton {
+    height: 10%;
+    margin-bottom: 3%;
+}
+
+
+/* SECCION DONDE ESTAMOS*/
+
+.donde-estamos {
+    height: 40%;
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.donde-estamos__map {
+    width: 40%;
+    height: 50%;
+}
+
+.contenedor-de-titulo-info {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.donde-estamos__titulo {
+    font-size: 150%;
+    margin-bottom: 5%;
+}
+
+.donde-estamos__info {
+    font-size: 100%;
+}
+
+/*FOOTER DE CONOCENOS CONTACTANOS*/
+
+.conocenos-contactanos-footer {
+    grid-area: footer2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conocenos-contactanos-footer__p {
+    font-size: 90%;
+}
+
+/*FOOTER DE CONOCENOS CONTACTANOS fin */
+
+/* INICIARSESIONREGISTRARME.HTML */
+
+/* Contenedor body pagina iniciar-sesion-registrarme */
+
+.iniciar-sesion-registrarme {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "seccion-iniciar-sesion"
+        "footer";
+    grid-template-rows: 55px 82% 80px;
+    grid-template-columns: 100%;
+}
+
+/* CAJA CONTENEDORA SECCION INICIARSESION */
+.seccion-iniciar-sesion {
+    grid-area: seccion-iniciar-sesion;
+    background-color: rgba(219, 215, 215, 0.11);
+    display: flex;
+    justify-content: center;
+    padding: 2% 15%;
+}
+
+/* IMAGEN DE FACE MANO CELULAR */
+.seccion-iniciar-sesion__img {
+    width: 390px;
+    margin-right: 3%;
+}
+
+/* DIV CAJA INICIAR SESION FORMULARIO + REGISTRO DE FACE*/
+
+.contenedor-formulario-registro-no-registrado {
+    background-color: rgba(219, 215, 215, 0);
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.formulario-de-registro {
+    border-radius: 10px;
+    height: 70%;
+    background-color: white;
+    border: 1px solid rgb(218, 215, 215);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* LOGO YOUAREBODY */
+.formulario-de-registro__logo {
+    width: 45%;
+    margin-top: 1%;
+}
+
+.formulario-ingreso-session {
+    width: 70%;
+    height: 40%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgb(218, 215, 215);
+}
+
+.formulario-input {
+    border: 1px solid rgb(218, 215, 215);
+    padding-left: 5px;
+    height: 100%;
+    border-radius: 4px;
+    margin: 1% 0;
+    background-color: rgba(255, 255, 255, 0.651);
+}
+
+::-webkit-input-placeholder {
+    font-size: x-small;
+}
+
+.botton {
+    margin: 2% 0;
+    border-radius: 10px;
+    background-color: rgb(140, 188, 216);
+    color: white;
+}
+
+.iniciar-sesion-con-facebook {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario-de-registro__logo-face {
+    width: 5%;
+    margin: 2%;
+}
+
+.formulario-de-registro__logo-face-a {
+    color: rgb(3, 70, 109);
+    font-size: 85%;
+    text-decoration: none;
+}
+
+.formulario-de-registro__logo-face-ap {
+    margin-bottom: 5%;
+    font-size: 85%;
+    text-decoration: none;
+    color: black;
+}
+
+/* CAJA DIV PARA NO REGISTRADOS */
+
+.no-registrado {
+    width: 100%;
+    height: 10%;
+    margin-top: 5%;
+    border-radius: 10px;
+    border: 1px solid rgb(218, 215, 215);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.no-registrado__p {
+    margin-right: 2%;
+    font-size: 72%;
+}
+
+.no-registrado__p-a {
+    font-size: 72%;
+    text-decoration: none;
+}
+
+.descargas-apple-android {
+    align-self: center;
+    margin-top: 4%;
+    width: 80%;
+}
+
+/* VISTA TABLET 991PX */
+@media screen and (max-width: 991px) {
+
+    /* HEADER + BOTON MENU */
+
+    .header {
+        grid-area: header;
+        border-bottom: 1px solid black;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .header__nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .boton-menu {
+        display: flex;
+        font-size: 25px;
+        color: black;
+        cursor: pointer;
+        margin-right: 5%;
+    }
+
+    .header__nav-ul-li-a {
+        font-size: 20px;
+    }
+
+    .header__nav-ul {
+        position: fixed;
+        width: 100vw;
+        height: calc(100% - 65px);
+        top: -100vh;
+        text-align: center;
+        transition: all .4s;
+        flex-direction: column;
+    }
+
+    .header__nav-ul-li {
+        margin: 30px 0 0 0;
+        line-height: 30px;
+    }
+
+    .header__nav-ul-li:hover {
+        background: none;
+    }
+
+    /* INDEX.HTML */
+    /* SECCION HOME */
+    /* IMAGEN DE FONDO */
+    .seccion-home {
+        grid-area: seccion-home;
+        background-image: url('../multimedia/image/grupo-amigos-adolescente-concepto-trabajo-equipo-unidad-cancha-baloncesto_53876-20727.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    /* PARRAFO TITULO */
+    .seccion-home__pconectate {
+        align-self: center;
+        font-size: 2em;
+        padding-top: 1em;
+        color: black;
+        text-shadow: .5px .5px 30px white;
+    }
+
+    /* TEXTO PARRAFO */
+    .seccion-home__pconectate-parrafo {
+        font-size: .9em;
+        align-self: center;
+        text-shadow: .5px .5px 10px white;
+    }
+
+    /*CAJA CONTENEDORA NECESITAS AYUDA WHATSAPP */
+    .seccion-home__div {
+        width: 175px;
+        height: 75px;
+        position: absolute;
+        bottom: .1em;
+        right: .1em;
+    }
+
+    /* IMAGEN WHATSAPP */
+    .seccion-home__div-img {
+        width: 28%;
+    }
+
+    /* LINK WHATSAPP */
+    .seccion-home__div-img-a {
+        display: inline-block;
+        font-size: .8em;
+        text-decoration: none;
+        color: white;
+        position: absolute;
+        top: 14px;
+        right: 10px;
+        text-shadow: .5px .5px 25px white;
+    }
+
+    /* INDEX.HTML FIN */
+    /* FOOTER */
+    .footer {
+        grid-area: footer;
+        border-top: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer__p {
+        font-size: .4em;
+    }
+
+    .footer__p-a {
+        text-decoration: none;
+    }
+
+    /*FOOTER FIN*/
+
+    /* INICIARSESIONREGISTRARME.HTML */
+
+    /* Contenedor body pagina iniciar-sesion-registrarme */
+
+    .iniciar-sesion-registrarme {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-areas:
+            "header"
+            "seccion-iniciar-sesion"
+            "footer";
+        grid-template-rows: 55px 82% 40px;
+        grid-template-columns: 100%;
+    }
+
+    /* CAJA CONTENEDORA SECCION INICIARSESION */
+    .seccion-iniciar-sesion {
+        grid-area: seccion-iniciar-sesion;
+        background-color: rgba(219, 215, 215, 0.11);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2% 15%;
+    }
+
+    /* IMAGEN DE FACE MANO CELULAR */
+    .seccion-iniciar-sesion__img {
+        width: 40%;
+        margin-right: 3%;
+        display: none;
+    }
+
+    /* DIV CAJA INICIAR SESION FORMULARIO + REGISTRO DE FACE*/
+
+    .contenedor-formulario-registro-no-registrado {
+        background-color: rgba(219, 215, 215, 0);
+        margin-top: 1%;
+        display: flex;
+        flex-direction: column;
+        width: 450px;
+        height: 570px;
+    }
+
+    .formulario-de-registro {
+        border-radius: 10px;
+        height: 100%;
+        background-color: white;
+        border: 1px solid rgb(218, 215, 215);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    /* LOGO YOUAREBODY */
+    .formulario-de-registro__logo {
+        align-self: center;
+        width: 150px;
+        margin-top: 1%;
+
+    }
+
+    .formulario-ingreso-session {
+
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid rgb(218, 215, 215);
+    }
+
+    .formulario-input {
+        border: 1px solid rgb(218, 215, 215);
+        padding-left: 5px;
+        height: 45px;
+        border-radius: 4px;
+        margin: 1% 0;
+        background-color: rgba(255, 255, 255, 0.651);
+    }
+
+    ::-webkit-input-placeholder {
+        font-size: xx-small;
+    }
+
+    .botton {
+        border-radius: 10px;
+        background-color: rgb(140, 188, 216);
+        color: white;
+    }
+
+    .iniciar-sesion-con-facebook {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .formulario-de-registro__logo-face {
+        width: 7%;
+        margin: 2%;
+    }
+
+    .formulario-de-registro__logo-face-a {
+        color: rgb(3, 70, 109);
+        font-size: 75%;
+        text-decoration: none;
+    }
+
+    .formulario-de-registro__logo-face-ap {
+        margin-bottom: 5%;
+        font-size: 80%;
+        text-decoration: none;
+        color: black;
+    }
+
+    /* CAJA DIV PARA NO REGISTRADOS */
+
+    .no-registrado {
+        width: 100%;
+        height: 20%;
+        border-radius: 10px;
+        border: 1px solid rgb(218, 215, 215);
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .no-registrado__p {
+        margin-right: 2%;
+        font-size: 72%;
+    }
+
+    .no-registrado__p-a {
+        font-size: 72%;
+        text-decoration: none;
+    }
+
+    .descargas-apple-android {
+        align-self: center;
+        width: 270px;
+    }
+
+    /* CONOCENOSCONTACTANOS.HTML */
+    /* Contenedor body pagina conocenos-contactanos */
+
+    .conocenos-contactanos {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "seccion-conocenos"
+            "seccion-contactanos"
+            "footer2";
+        grid-template-rows: 55px 58% 700px 70px;
+        grid-template-columns: 100%;
+    }
+
+    /* CAJA CONTENEDORA NECESITAS AYUDA WHATSAPP */
+    .conocenos__div {
+        width: 30%;
+        position: fixed;
+        top: 9%;
+        right: 10px;
+        z-index: 100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* IMAGEN WHATSAPP */
+    .conocenos__div-img {
+        width: 30%;
+    }
+
+    /* LINK WHATSAPP */
+    .conocenos__div-img-a {
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        text-shadow: 0px 0px 9px white;
+    }
+
+    /* IMAGENES Y PARRAFOS */
+    /* CAJA CONTENEDORA DE IMAGEN 1 + TITULO + PARRAFO */
+    .conocenos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor-imagen-1 {
+        background-image: url(../multimedia/image/unidosluz.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center top;
+        height: 390px;
+
+    }
+
+    .contenedor-imagen-2 {
+        background-image: url(../multimedia/image/ayudamano.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 390px;
+
+
+    }
+
+    .contenedor-imagen-3 {
+        background-image: url(../multimedia/image/unidosmanoslevantadas.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 390px;
+    }
+
+    /* IMAGENES Y PARRAFOS */
+    /* CAJA CONTENEDORA DE IMAGEN 1 + TITULO + PARRAFO */
+    .conocenos {
+        grid-area: seccion-conocenos;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .contenedor-imagen-1 {
+        display: flex;
+    }
+
+    .conocenos-imagen-1 {
+        width: 50%;
+        position: relative;
+        top: 10%;
+        left: 5%;
+        z-index: 10;
+        border-radius: 20px;
+        display: none;
+    }
+
+    .contenedor-textos-imagen-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10%;
+    }
+
+    .conocenos-imagen1-titulo {
+        font-size: x-large;
+        text-shadow: 0px 0px 9px white;
+    }
+
+    .conocenos-imagen1-parrafo {
+        font-size: 1em;
+        text-shadow: 0px 0px 9px white;
+    }
+
+    /* CAJA CONTENEDORA DE IMAGEN 2 + PARRAFO */
+
+    .contenedor-imagen-2 {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .conocenos-imagen-2 {
+        width: 53%;
+        position: relative;
+        bottom: 4%;
+        z-index: 5;
+        border-radius: 20px;
+        display: none;
+    }
+
+    .contenedor-textos-imagen2 {
+        margin-top: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conocenos-imagen-2-titulo {
+        font-size: x-large;
+        text-shadow: 0px 0px 9px white;
+        margin: 10% 20%;
+    }
+
+
+    .conocenos-imagen-2-parrafo {
+        font-size: 100%;
+        text-shadow: 0px 0px 9px white;
+    }
+
+
+    /* CAJA CONTENEDORA DE IMAGEN 3 + 3 PARRAFOS */
+
+    .contenedor-imagen-3 {
+        display: flex;
+    }
+
+    .conocenos-imagen-3 {
+        width: 53%;
+        position: relative;
+        bottom: 15%;
+        border-radius: 20px;
+        display: none;
+    }
+
+    .contenedor-textos-imagen3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 5% 5%;
+    }
+
+    .conocenos-imagen-3-p1 {
+        font-size: 1.2em;
+        text-shadow: 0px 0px 9px white;
+        color: white;
+    }
+
+    .conocenos-imagen-3-p2 {
+        font-size: 1.3em;
+        text-shadow: 0px 0px 9px wheat;
+        color: white;
+    }
+
+    .conocenos-imagen-3-p3 {
+        font-size: 1.4em;
+        text-shadow: 0px 0px 9px white;
+        color: white;
+    }
+
+
+
+    /*SECCION CONTACTANOS*/
+
+    .contactanos {
+        grid-area: seccion-contactanos;
+        border-top: 1px solid black;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 700px;
+    }
+
+    .contenedor-whatsapp-contactanos {
+        display: flex;
+        align-items: center;
+    }
+
+    .contactacnos__img {
+        width: 10%;
+        margin-left: 15%;
+    }
+
+    .contactanos__img-a {
+        text-decoration: none;
+        font-size: 160%;
+        color: rgb(63, 189, 162);
+        text-shadow: 1px 1px 1px black;
+    }
+
+    .contactanos__envianos-un-mensaje {
+        font-size: 150%;
+        margin-left: 40%;
+        margin-top: -20px;
+    }
+
+    .formulario-envianos-un-mensaje {
+        width: 90%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nombre-apellido-asunto {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-right: 5%;
+    }
+
+    .texto {
+        height: 10%;
+        padding-left: 7%;
+    }
+
+    .enviar-mensaje {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .text-area {
+        margin-top: 4%;
+        height: 50%;
+        padding-left: 5%;
+    }
+
+    .boton {
+        height: 10%;
+        margin-bottom: 3%;
+    }
+
+
+    /* SECCION DONDE ESTAMOS*/
+
+    .donde-estamos {
+        height: 40%;
+        border-top: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid black;
+    }
+
+    .donde-estamos__map {
+        width: 40%;
+        height: 50%;
+    }
+
+    .contenedor-de-titulo-info {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5%;
+    }
+
+    .donde-estamos__titulo {
+        font-size: 150%;
+        margin-bottom: 5%;
+    }
+
+    .donde-estamos__info {
+        font-size: 100%;
+    }
+
+    /*FOOTER DE CONOCENOS CONTACTANOS*/
+
+    .conocenos-contactanos-footer {
+        grid-area: footer2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conocenos-contactanos-footer__p {
+        font-size: 90%;
+    }
+
+    /*FOOTER DE CONOCENOS CONTACTANOS fin */
+
+}
+
+/* VISTA MOVIL 768PX */
+@media screen and (max-width: 768px) {
+
+    /* HEADER + BOTON MENU */
+
+    .header {
+        grid-area: header;
+        border-bottom: 1px solid black;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .header__nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .boton-menu {
+        display: flex;
+        font-size: 25px;
+        color: black;
+        cursor: pointer;
+        margin-right: 5%;
+    }
+
+    .header__nav-ul-li-a {
+        font-size: 20px;
+    }
+
+    .header__nav-ul {
+        position: fixed;
+        width: 100vw;
+        height: calc(100% - 65px);
+        top: -100vh;
+        text-align: center;
+        transition: all .4s;
+        flex-direction: column;
+    }
+
+    .header__nav-ul-li {
+        margin: 30px 0 0 0;
+        line-height: 30px;
+    }
+
+    .header__nav-ul-li:hover {
+        background: none;
+    }
+
+    /* INDEX.HTML */
+    /* SECCION HOME */
+    /* IMAGEN DE FONDO */
+    .seccion-home {
+        grid-area: seccion-home;
+        background-image: url('../multimedia/image/grupo-amigos-adolescente-concepto-trabajo-equipo-unidad-cancha-baloncesto_53876-20727.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    /* PARRAFO TITULO */
+    .seccion-home__pconectate {
+        align-self: center;
+        font-size: 2em;
+        padding-top: 1em;
+        color: black;
+        text-shadow: .5px .5px 30px white;
+    }
+
+    /* TEXTO PARRAFO */
+    .seccion-home__pconectate-parrafo {
+        font-size: .9em;
+        align-self: center;
+        text-shadow: .5px .5px 10px white;
+    }
+
+    /*CAJA CONTENEDORA NECESITAS AYUDA WHATSAPP */
+    .seccion-home__div {
+        width: 175px;
+        height: 75px;
+        position: absolute;
+        bottom: .1em;
+        right: .1em;
+    }
+
+    /* IMAGEN WHATSAPP */
+    .seccion-home__div-img {
+        width: 28%;
+    }
+
+    /* LINK WHATSAPP */
+    .seccion-home__div-img-a {
+        display: inline-block;
+        font-size: .8em;
+        text-decoration: none;
+        color: white;
+        position: absolute;
+        top: 14px;
+        right: 10px;
+        text-shadow: .5px .5px 25px white;
+    }
+
+    /* INDEX.HTML FIN */
+    /* FOOTER */
+    .footer {
+        grid-area: footer;
+        border-top: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer__p {
+        font-size: .4em;
+    }
+
+    .footer__p-a {
+        text-decoration: none;
+    }
+
+    /*FOOTER FIN*/
+
+    /* INICIARSESIONREGISTRARME.HTML */
+
+    /* Contenedor body pagina iniciar-sesion-registrarme */
+
+    .iniciar-sesion-registrarme {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-areas:
+            "header"
+            "seccion-iniciar-sesion"
+            "footer";
+        grid-template-rows: 55px 82% 40px;
+        grid-template-columns: 100%;
+    }
+
+    /* CAJA CONTENEDORA SECCION INICIARSESION */
+    .seccion-iniciar-sesion {
+        grid-area: seccion-iniciar-sesion;
+        background-color: rgba(219, 215, 215, 0.11);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2% 15%;
+    }
+
+    /* IMAGEN DE FACE MANO CELULAR */
+    .seccion-iniciar-sesion__img {
+        width: 40%;
+        margin-right: 3%;
+        display: none;
+    }
+
+    /* DIV CAJA INICIAR SESION FORMULARIO + REGISTRO DE FACE*/
+
+    .contenedor-formulario-registro-no-registrado {
+        background-color: rgba(219, 215, 215, 0);
+        margin-top: 1%;
+        display: flex;
+        flex-direction: column;
+        width: 450px;
+        height: 570px;
+    }
+
+    .formulario-de-registro {
+        border-radius: 10px;
+        height: 100%;
+        background-color: white;
+        border: 1px solid rgb(218, 215, 215);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    /* LOGO YOUAREBODY */
+    .formulario-de-registro__logo {
+        align-self: center;
+        width: 150px;
+        margin-top: 1%;
+
+    }
+
+    .formulario-ingreso-session {
+
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid rgb(218, 215, 215);
+    }
+
+    .formulario-input {
+        border: 1px solid rgb(218, 215, 215);
+        padding-left: 5px;
+        height: 45px;
+        border-radius: 4px;
+        margin: 1% 0;
+        background-color: rgba(255, 255, 255, 0.651);
+    }
+
+    ::-webkit-input-placeholder {
+        font-size: xx-small;
+    }
+
+    .botton {
+        border-radius: 10px;
+        background-color: rgb(140, 188, 216);
+        color: white;
+    }
+
+    .iniciar-sesion-con-facebook {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .formulario-de-registro__logo-face {
+        width: 7%;
+        margin: 2%;
+    }
+
+    .formulario-de-registro__logo-face-a {
+        color: rgb(3, 70, 109);
+        font-size: 75%;
+        text-decoration: none;
+    }
+
+    .formulario-de-registro__logo-face-ap {
+        margin-bottom: 5%;
+        font-size: 80%;
+        text-decoration: none;
+        color: black;
+    }
+
+    /* CAJA DIV PARA NO REGISTRADOS */
+
+    .no-registrado {
+        width: 100%;
+        height: 20%;
+        border-radius: 10px;
+        border: 1px solid rgb(218, 215, 215);
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .no-registrado__p {
+        margin-right: 2%;
+        font-size: 72%;
+    }
+
+    .no-registrado__p-a {
+        font-size: 72%;
+        text-decoration: none;
+    }
+
+    .descargas-apple-android {
+        align-self: center;
+        width: 270px;
+    }
+
+    /* CONOCENOSCONTACTANOS.HTML */
+    /* Contenedor body pagina conocenos-contactanos */
+
+    .conocenos-contactanos {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "seccion-conocenos"
+            "seccion-contactanos"
+            "footer2";
+        grid-template-rows: 55px 58% 700px 40px;
+        grid-template-columns: 100%;
+    }
+
+    /* CAJA CONTENEDORA NECESITAS AYUDA WHATSAPP */
+    .conocenos__div {
+        width: 30%;
+        position: fixed;
+        top: 9%;
+        right: 10px;
+        z-index: 100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* IMAGEN WHATSAPP */
+    .conocenos__div-img {
+        width: 30%;
+    }
+
+    /* LINK WHATSAPP */
+    .conocenos__div-img-a {
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        text-shadow: 0px 0px 9px white;
+    }
+
+    /* IMAGENES Y PARRAFOS */
+    /* CAJA CONTENEDORA DE IMAGEN 1 + TITULO + PARRAFO */
+    .conocenos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor-imagen-1 {
+        background-image: url(../multimedia/image/unidosluz.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center top;
+        height: 390px;
+
+    }
+
+    .contenedor-imagen-2 {
+        background-image: url(../multimedia/image/ayudamano.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 390px;
+
+
+    }
+
+    .contenedor-imagen-3 {
+        background-image: url(../multimedia/image/unidosmanoslevantadas.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 390px;
+    }
+
+    /* IMAGENES Y PARRAFOS */
+    /* CAJA CONTENEDORA DE IMAGEN 1 + TITULO + PARRAFO */
+    .conocenos {
+        grid-area: seccion-conocenos;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .contenedor-imagen-1 {
+        display: flex;
+    }
+
+    .conocenos-imagen-1 {
+        width: 50%;
+        position: relative;
+        top: 10%;
+        left: 5%;
+        z-index: 10;
+        border-radius: 20px;
+        display: none;
+    }
+
+    .contenedor-textos-imagen-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10%;
+    }
+
+    .conocenos-imagen1-titulo {
+        font-size: x-large;
+        text-shadow: 0px 0px 9px white;
+    }
+
+    .conocenos-imagen1-parrafo {
+        font-size: 1em;
+        text-shadow: 0px 0px 9px white;
+    }
+
+    /* CAJA CONTENEDORA DE IMAGEN 2 + PARRAFO */
+
+    .contenedor-imagen-2 {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .conocenos-imagen-2 {
+        width: 53%;
+        position: relative;
+        bottom: 4%;
+        z-index: 5;
+        border-radius: 20px;
+        display: none;
+    }
+
+    .contenedor-textos-imagen2 {
+        margin-top: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conocenos-imagen-2-titulo {
+        font-size: x-large;
+        text-shadow: 0px 0px 9px white;
+        margin: 10% 20%;
+    }
+
+
+    .conocenos-imagen-2-parrafo {
+        font-size: 100%;
+        text-shadow: 0px 0px 9px white;
+    }
+
+
+    /* CAJA CONTENEDORA DE IMAGEN 3 + 3 PARRAFOS */
+
+    .contenedor-imagen-3 {
+        display: flex;
+    }
+
+    .conocenos-imagen-3 {
+        width: 53%;
+        position: relative;
+        bottom: 15%;
+        border-radius: 20px;
+        display: none;
+    }
+
+    .contenedor-textos-imagen3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 5% 5%;
+    }
+
+    .conocenos-imagen-3-p1 {
+        font-size: 1.2em;
+        text-shadow: 0px 0px 9px white;
+        color: white;
+    }
+
+    .conocenos-imagen-3-p2 {
+        font-size: 1.3em;
+        text-shadow: 0px 0px 9px wheat;
+        color: white;
+    }
+
+    .conocenos-imagen-3-p3 {
+        font-size: 1.4em;
+        text-shadow: 0px 0px 9px white;
+        color: white;
+    }
+
+
+
+    /*SECCION CONTACTANOS*/
+
+    .contactanos {
+        grid-area: seccion-contactanos;
+        border-top: 1px solid black;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .contenedor-whatsapp-contactanos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20%;
+    }
+
+    .contactacnos__img {
+        width: 15%;
+    }
+
+    .contactanos__img-a {
+        text-decoration: none;
+        font-size: 100%;
+        color: rgb(63, 189, 162);
+        text-shadow: 1px 1px 1px black;
+    }
+
+    .contactanos__envianos-un-mensaje {
+        font-size: 100%;
+        margin-right: 15%;
+    }
+
+    .formulario-envianos-un-mensaje {
+        width: 90%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nombre-apellido-asunto {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-right: 5%;
+    }
+
+    .texto {
+        height: 10%;
+        padding-left: 7%;
+    }
+
+    .enviar-mensaje {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .text-area {
+        margin-top: 4%;
+        height: 50%;
+        padding-left: 5%;
+    }
+
+    .boton {
+        height: 10%;
+        margin-bottom: 3%;
+    }
+
+
+    /* SECCION DONDE ESTAMOS*/
+
+    .donde-estamos {
+        height: 40%;
+        border-top: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .donde-estamos__map {
+        width: 40%;
+        height: 50%;
+    }
+
+    .contenedor-de-titulo-info {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5%;
+    }
+
+    .donde-estamos__titulo {
+        font-size: 150%;
+        margin-bottom: 5%;
+    }
+
+    .donde-estamos__info {
+        font-size: 100%;
+    }
+
+    /*FOOTER DE CONOCENOS CONTACTANOS*/
+
+    .conocenos-contactanos-footer {
+        grid-area: footer2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conocenos-contactanos-footer__p {
+        font-size: 90%;
+    }
+
+    /*FOOTER DE CONOCENOS CONTACTANOS fin */
+}
+
+@media screen and (max-width: 460px) {
+
+    /* HEADER + BOTON MENU */
+
+    .header {
+        grid-area: header;
+        border-bottom: 1px solid black;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .header__nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .boton-menu {
+        display: flex;
+        font-size: 25px;
+        color: black;
+        cursor: pointer;
+        margin-right: 5%;
+    }
+
+    .header__nav-ul-li-a {
+        font-size: 20px;
+    }
+
+    .header__nav-ul {
+        position: fixed;
+        width: 100vw;
+        height: calc(100% - 65px);
+        top: -100vh;
+        text-align: center;
+        transition: all .4s;
+        flex-direction: column;
+    }
+
+    .header__nav-ul-li {
+        margin: 30px 0 0 0;
+        line-height: 30px;
+    }
+
+    .header__nav-ul-li:hover {
+        background: none;
+    }
+
+    /* INDEX.HTML */
+    /* SECCION HOME */
+    /* IMAGEN DE FONDO */
+    .seccion-home {
+        grid-area: seccion-home;
+        background-image: url('../multimedia/image/grupo-amigos-adolescente-concepto-trabajo-equipo-unidad-cancha-baloncesto_53876-20727.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    /* PARRAFO TITULO */
+    .seccion-home__pconectate {
+        align-self: center;
+        font-size: 2em;
+        padding-top: 1em;
+        color: black;
+        text-shadow: .5px .5px 30px white;
+    }
+
+    /* TEXTO PARRAFO */
+    .seccion-home__pconectate-parrafo {
+        font-size: .9em;
+        align-self: center;
+        text-shadow: .5px .5px 10px white;
+    }
+
+    /*CAJA CONTENEDORA NECESITAS AYUDA WHATSAPP */
+    .seccion-home__div {
+        width: 175px;
+        height: 75px;
+        position: absolute;
+        bottom: .1em;
+        right: .1em;
+    }
+
+    /* IMAGEN WHATSAPP */
+    .seccion-home__div-img {
+        width: 28%;
+    }
+
+    /* LINK WHATSAPP */
+    .seccion-home__div-img-a {
+        display: inline-block;
+        font-size: .8em;
+        text-decoration: none;
+        color: white;
+        position: absolute;
+        top: 14px;
+        right: 10px;
+        text-shadow: .5px .5px 25px white;
+    }
+
+    /* INDEX.HTML FIN */
+    /* FOOTER */
+    .footer {
+        grid-area: footer;
+        border-top: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer__p {
+        font-size: .4em;
+    }
+
+    .footer__p-a {
+        text-decoration: none;
+    }
+
+    /*FOOTER FIN*/
+
+    /* INICIARSESIONREGISTRARME.HTML */
+
+    /* Contenedor body pagina iniciar-sesion-registrarme */
+
+    .iniciar-sesion-registrarme {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-areas:
+            "header"
+            "seccion-iniciar-sesion"
+            "footer";
+        grid-template-rows: 55px 82% 80px;
+        grid-template-columns: 100%;
+    }
+
+    /* CAJA CONTENEDORA SECCION INICIARSESION */
+    .seccion-iniciar-sesion {
+        grid-area: seccion-iniciar-sesion;
+        background-color: rgba(219, 215, 215, 0.11);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2% 15%;
+    }
+
+    /* IMAGEN DE FACE MANO CELULAR */
+    .seccion-iniciar-sesion__img {
+        width: 40%;
+        margin-right: 3%;
+        display: none;
+    }
+
+    /* DIV CAJA INICIAR SESION FORMULARIO + REGISTRO DE FACE*/
+
+    .contenedor-formulario-registro-no-registrado {
+        background-color: rgba(219, 215, 215, 0);
+        margin-top: 1%;
+        display: flex;
+        flex-direction: column;
+        width: 130%;
+        height: 90%;
+    }
+
+    .formulario-de-registro {
+        border-radius: 10px;
+        height: 70%;
+        background-color: white;
+        border: 1px solid rgb(218, 215, 215);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    /* LOGO YOUAREBODY */
+    .formulario-de-registro__logo {
+        width: 45%;
+        margin-top: 1%;
+        display: none;
+    }
+
+    .formulario-ingreso-session {
+
+        width: 70%;
+        height: 50%;
+        padding-bottom: 5%;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid rgb(218, 215, 215);
+    }
+
+    .formulario-input {
+        border: 1px solid rgb(218, 215, 215);
+        padding-left: 5px;
+        height: 50px;
+        border-radius: 4px;
+        margin: 1% 0;
+        background-color: rgba(255, 255, 255, 0.651);
+    }
+
+    ::-webkit-input-placeholder {
+        font-size: xx-small;
+    }
+
+    .botton {
+        margin: 10% 0;
+        border-radius: 10px;
+        background-color: rgb(140, 188, 216);
+        color: white;
+    }
+
+    .iniciar-sesion-con-facebook {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .formulario-de-registro__logo-face {
+        width: 7%;
+        margin: 2%;
+    }
+
+    .formulario-de-registro__logo-face-a {
+        color: rgb(3, 70, 109);
+        font-size: 75%;
+        text-decoration: none;
+    }
+
+    .formulario-de-registro__logo-face-ap {
+        margin-bottom: 5%;
+        font-size: 80%;
+        text-decoration: none;
+        color: black;
+    }
+
+    /* CAJA DIV PARA NO REGISTRADOS */
+
+    .no-registrado {
+        width: 100%;
+        height: 10%;
+        margin-top: 5%;
+        border-radius: 10px;
+        border: 1px solid rgb(218, 215, 215);
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .no-registrado__p {
+        margin-right: 2%;
+        font-size: 72%;
+    }
+
+    .no-registrado__p-a {
+        font-size: 72%;
+        text-decoration: none;
+    }
+
+    .descargas-apple-android {
+        align-self: center;
+        margin-top: 18%;
+        width: 200px;
+    }
+
+    /* CONOCENOSCONTACTANOS.HTML */
+    /* Contenedor body pagina conocenos-contactanos */
+
+    .conocenos-contactanos {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "seccion-conocenos"
+            "seccion-contactanos"
+            "footer2";
+        grid-template-rows: 55px 58% 700px 40px;
+        grid-template-columns: 100%;
+    }
+
+    /* CAJA CONTENEDORA NECESITAS AYUDA WHATSAPP */
+    .conocenos__div {
+        width: 17%;
+        position: fixed;
+        top: 9%;
+        left: 70%;
+        z-index: 100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* IMAGEN WHATSAPP */
+    .conocenos__div-img {
+        width: 90%;
+    }
+
+    /* LINK WHATSAPP */
+    .conocenos__div-img-a {
+        font-size: 100%;
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        text-shadow: 0px 0px 9px white;
+    }
+
+    /* IMAGENES Y PARRAFOS */
+    /* CAJA CONTENEDORA DE IMAGEN 1 + TITULO + PARRAFO */
+    .conocenos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor-imagen-1 {
+        background-image: url(../multimedia/image/unidosluz.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 370px;
+
+    }
+
+    .contenedor-imagen-2 {
+        background-image: url(../multimedia/image/ayudamano.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 370px;
+
+
+    }
+
+    .contenedor-imagen-3 {
+        background-image: url(../multimedia/image/unidosmanoslevantadas.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 370px;
+    }
+
+    /* IMAGENES Y PARRAFOS */
+    /* CAJA CONTENEDORA DE IMAGEN 1 + TITULO + PARRAFO */
+    .conocenos {
+        grid-area: seccion-conocenos;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .contenedor-imagen-1 {
+        display: flex;
+    }
+
+    .conocenos-imagen-1 {
+        width: 50%;
+        position: relative;
+        top: 10%;
+        left: 5%;
+        z-index: 10;
+        border-radius: 20px;
+        display: none;
+    }
+
+    .contenedor-textos-imagen-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conocenos-imagen1-titulo {
+        font-size: large;
+        text-shadow: 0px 0px 9px white;
+    }
+
+    .conocenos-imagen1-parrafo {
+        font-size: 1em;
+        margin-bottom: 10%;
+        margin: 0 5% 5% 20%;
+        text-shadow: 0px 0px 9px white;
+    }
+
+    /* CAJA CONTENEDORA DE IMAGEN 2 + PARRAFO */
+
+    .contenedor-imagen-2 {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .conocenos-imagen-2 {
+        width: 53%;
+        position: relative;
+        bottom: 4%;
+        z-index: 5;
+        border-radius: 20px;
+        display: none;
+    }
+
+    .contenedor-textos-imagen2 {
+        margin-top: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conocenos-imagen-2-titulo {
+        font-size: 100%;
+        text-shadow: 0px 0px 9px white;
+        margin: 10% 15%;
+    }
+
+
+    .conocenos-imagen-2-parrafo {
+        font-size: 90%;
+        text-shadow: 0px 0px 9px white;
+    }
+
+
+    /* CAJA CONTENEDORA DE IMAGEN 3 + 3 PARRAFOS */
+
+    .contenedor-imagen-3 {
+        display: flex;
+    }
+
+    .conocenos-imagen-3 {
+        width: 53%;
+        position: relative;
+        bottom: 15%;
+        border-radius: 20px;
+        display: none;
+    }
+
+    .contenedor-textos-imagen3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0 3% 6% 5%;
+    }
+
+    .conocenos-imagen-3-p1 {
+        font-size: 90%;
+        text-shadow: 0px 0px 9px white;
+        margin: 15% 10% 10% 10%;
+    }
+
+    .conocenos-imagen-3-p2 {
+        font-size: 90%;
+        text-shadow: 0px 0px 9px white;
+        margin: 10%;
+    }
+
+    .conocenos-imagen-3-p3 {
+        font-size: 90%;
+        text-shadow: 0px 0px 9px white;
+        margin: 10%;
+    }
+
+
+
+    /*SECCION CONTACTANOS*/
+
+    .contactanos {
+        grid-area: seccion-contactanos;
+        border-top: 1px solid black;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor-whatsapp-contactanos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 7%;
+    }
+
+    .contactacnos__img {
+        width: 15%;
+    }
+
+    .contactanos__img-a {
+        text-decoration: none;
+        font-size: 110%;
+        color: rgb(63, 189, 162);
+        text-shadow: 1px 1px 1px black;
+    }
+
+    .contactanos__envianos-un-mensaje {
+        font-size: 100%;
+        margin-top: 3px;
+    }
+
+    .formulario-envianos-un-mensaje {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .nombre-apellido-asunto {
+        width: 90%;
+        height: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-left: 5%;
+    }
+
+    .texto {
+        height: 30%;
+        padding-left: 7%;
+        margin: 1% 0;
+    }
+
+    .enviar-mensaje {
+        width: 90%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-area {
+        margin-top: 4%;
+        height: 200%;
+        padding-left: 5%;
+    }
+
+    .boton {
+        width: 100%;
+        height: 30%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+
+
+    /* SECCION DONDE ESTAMOS*/
+
+    .donde-estamos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .donde-estamos__map {
+        width: 90%;
+        height: 80%;
+        order: 1;
+    }
+
+    .contenedor-de-titulo-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .donde-estamos__titulo {
+        font-size: 100%;
+        margin-top: 9%;
+    }
+
+    .donde-estamos__info {
+        font-size: 60%;
+        margin: 0 1% 10% 1%;
+    }
+
+    /*FOOTER DE CONOCENOS CONTACTANOS*/
+
+    .conocenos-contactanos-footer {
+        grid-area: footer2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .conocenos-contactanos-footer__p {
+        font-size: 60%;
+    }
+
+    /*FOOTER DE CONOCENOS CONTACTANOS fin */
+}
+
+@media screen and (max-width: 300px) {
+
+    /* HEADER + BOTON MENU */
+
+    .header {
+        grid-area: header;
+        border-bottom: 1px solid black;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .header__nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .boton-menu {
+        display: flex;
+        font-size: 25px;
+        color: black;
+        cursor: pointer;
+        margin-right: 5%;
+    }
+
+    .header__nav-ul-li-a {
+        font-size: 20px;
+    }
+
+    .header__nav-ul {
+        position: fixed;
+        width: 100vw;
+        height: calc(100% - 65px);
+        top: -100vh;
+        text-align: center;
+        transition: all .4s;
+        flex-direction: column;
+    }
+
+    .header__nav-ul-li {
+        margin: 30px 0 0 0;
+        line-height: 30px;
+    }
+
+    .header__nav-ul-li:hover {
+        background: none;
+    }
+
+    /* INDEX.HTML */
+    /* SECCION HOME */
+    /* IMAGEN DE FONDO */
+    .seccion-home {
+        grid-area: seccion-home;
+        background-image: url('../multimedia/image/grupo-amigos-adolescente-concepto-trabajo-equipo-unidad-cancha-baloncesto_53876-20727.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    /* PARRAFO TITULO */
+    .seccion-home__pconectate {
+        align-self: center;
+        font-size: 2em;
+        padding-top: 1em;
+        color: black;
+        text-shadow: .5px .5px 30px white;
+    }
+
+    /* TEXTO PARRAFO */
+    .seccion-home__pconectate-parrafo {
+        font-size: .9em;
+        align-self: center;
+        text-shadow: .5px .5px 10px white;
+    }
+
+    /*CAJA CONTENEDORA NECESITAS AYUDA WHATSAPP */
+    .seccion-home__div {
+        width: 175px;
+        height: 75px;
+        position: absolute;
+        bottom: .1em;
+        right: .1em;
+    }
+
+    /* IMAGEN WHATSAPP */
+    .seccion-home__div-img {
+        width: 28%;
+    }
+
+    /* LINK WHATSAPP */
+    .seccion-home__div-img-a {
+        display: inline-block;
+        font-size: .8em;
+        text-decoration: none;
+        color: white;
+        position: absolute;
+        top: 14px;
+        right: 10px;
+        text-shadow: .5px .5px 25px white;
+    }
+
+    /* INDEX.HTML FIN */
+    /* FOOTER */
+    .footer {
+        grid-area: footer;
+        border-top: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer__p {
+        font-size: .4em;
+    }
+
+    .footer__p-a {
+        text-decoration: none;
+    }
+
+    /*FOOTER FIN*/
+
+    /* INICIARSESIONREGISTRARME.HTML */
+
+    /* Contenedor body pagina iniciar-sesion-registrarme */
+
+    .iniciar-sesion-registrarme {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-areas:
+            "header"
+            "seccion-iniciar-sesion"
+            "footer";
+        grid-template-rows: 55px 82% 80px;
+        grid-template-columns: 100%;
+    }
+
+    /* CAJA CONTENEDORA SECCION INICIARSESION */
+    .seccion-iniciar-sesion {
+        grid-area: seccion-iniciar-sesion;
+        background-color: rgba(219, 215, 215, 0.11);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2% 15%;
+    }
+
+    /* IMAGEN DE FACE MANO CELULAR */
+    .seccion-iniciar-sesion__img {
+        width: 40%;
+        margin-right: 3%;
+        display: none;
+    }
+
+    /* DIV CAJA INICIAR SESION FORMULARIO + REGISTRO DE FACE*/
+
+    .contenedor-formulario-registro-no-registrado {
+        background-color: rgba(219, 215, 215, 0);
+        margin-top: 1%;
+        display: flex;
+        flex-direction: column;
+        width: 130%;
+        height: 90%;
+    }
+
+    .formulario-de-registro {
+        border-radius: 10px;
+        height: 70%;
+        background-color: white;
+        border: 1px solid rgb(218, 215, 215);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    /* LOGO YOUAREBODY */
+    .formulario-de-registro__logo {
+        width: 45%;
+        margin-top: 1%;
+        display: none;
+    }
+
+    .formulario-ingreso-session {
+
+        width: 70%;
+        height: 50%;
+        padding-bottom: 5%;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid rgb(218, 215, 215);
+    }
+
+    .formulario-input {
+        border: 1px solid rgb(218, 215, 215);
+        padding-left: 5px;
+        height: 50px;
+        border-radius: 4px;
+        margin: 1% 0;
+        background-color: rgba(255, 255, 255, 0.651);
+    }
+
+    ::-webkit-input-placeholder {
+        font-size: xx-small;
+    }
+
+    .botton {
+        margin: 10% 0;
+        border-radius: 10px;
+        background-color: rgb(140, 188, 216);
+        color: white;
+    }
+
+    .iniciar-sesion-con-facebook {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .formulario-de-registro__logo-face {
+        width: 7%;
+        margin: 2%;
+    }
+
+    .formulario-de-registro__logo-face-a {
+        color: rgb(3, 70, 109);
+        font-size: 75%;
+        text-decoration: none;
+    }
+
+    .formulario-de-registro__logo-face-ap {
+        margin-bottom: 5%;
+        font-size: 80%;
+        text-decoration: none;
+        color: black;
+    }
+
+    /* CAJA DIV PARA NO REGISTRADOS */
+
+    .no-registrado {
+        width: 100%;
+        height: 10%;
+        margin-top: 5%;
+        border-radius: 10px;
+        border: 1px solid rgb(218, 215, 215);
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .no-registrado__p {
+        margin-right: 2%;
+        font-size: 72%;
+    }
+
+    .no-registrado__p-a {
+        font-size: 72%;
+        text-decoration: none;
+    }
+
+    .descargas-apple-android {
+        align-self: center;
+        margin-top: 18%;
+        width: 200px;
+    }
+
+    /* CONOCENOSCONTACTANOS.HTML */
+    /* Contenedor body pagina conocenos-contactanos */
+
+    .conocenos-contactanos {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "seccion-conocenos"
+            "seccion-contactanos"
+            "footer2";
+        grid-template-rows: 55px 58% 700px 40px;
+        grid-template-columns: 100%;
+    }
+
+    /* CAJA CONTENEDORA NECESITAS AYUDA WHATSAPP */
+    .conocenos__div {
+        width: 17%;
+        position: fixed;
+        top: 9%;
+        left: 70%;
+        z-index: 100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* IMAGEN WHATSAPP */
+    .conocenos__div-img {
+        width: 90%;
+    }
+
+    /* LINK WHATSAPP */
+    .conocenos__div-img-a {
+        font-size: 100%;
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        text-shadow: 0px 0px 9px white;
+    }
+
+    /* IMAGENES Y PARRAFOS */
+    /* CAJA CONTENEDORA DE IMAGEN 1 + TITULO + PARRAFO */
+    .conocenos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor-imagen-1 {
+        background-image: url(../multimedia/image/unidosluz.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 370px;
+
+    }
+
+    .contenedor-imagen-2 {
+        background-image: url(../multimedia/image/ayudamano.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 370px;
+
+
+    }
+
+    .contenedor-imagen-3 {
+        background-image: url(../multimedia/image/unidosmanoslevantadas.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 370px;
+    }
+
+    /* IMAGENES Y PARRAFOS */
+    /* CAJA CONTENEDORA DE IMAGEN 1 + TITULO + PARRAFO */
+    .conocenos {
+        grid-area: seccion-conocenos;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .contenedor-imagen-1 {
+        display: flex;
+    }
+
+    .conocenos-imagen-1 {
+        width: 50%;
+        position: relative;
+        top: 10%;
+        left: 5%;
+        z-index: 10;
+        border-radius: 20px;
+        display: none;
+    }
+
+    .contenedor-textos-imagen-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conocenos-imagen1-titulo {
+        font-size: large;
+        text-shadow: 0px 0px 9px white;
+    }
+
+    .conocenos-imagen1-parrafo {
+        font-size: 1em;
+        margin-bottom: 10%;
+        margin: 0 5% 5% 20%;
+        text-shadow: 0px 0px 9px white;
+    }
+
+    /* CAJA CONTENEDORA DE IMAGEN 2 + PARRAFO */
+
+    .contenedor-imagen-2 {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .conocenos-imagen-2 {
+        width: 53%;
+        position: relative;
+        bottom: 4%;
+        z-index: 5;
+        border-radius: 20px;
+        display: none;
+    }
+
+    .contenedor-textos-imagen2 {
+        margin-top: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conocenos-imagen-2-titulo {
+        font-size: 87%;
+        text-shadow: 0px 0px 9px white;
+        margin: 10% 15%;
+    }
+
+
+    .conocenos-imagen-2-parrafo {
+        font-size: 80%;
+        text-shadow: 0px 0px 9px white;
+    }
+
+
+    /* CAJA CONTENEDORA DE IMAGEN 3 + 3 PARRAFOS */
+
+    .contenedor-imagen-3 {
+        display: flex;
+    }
+
+    .conocenos-imagen-3 {
+        width: 53%;
+        position: relative;
+        bottom: 15%;
+        border-radius: 20px;
+        display: none;
+    }
+
+    .contenedor-textos-imagen3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0 3% 6% 5%;
+    }
+
+    .conocenos-imagen-3-p1 {
+        font-size: 80%;
+        text-shadow: 0px 0px 9px white;
+        margin: 15% 10% 10% 10%;
+    }
+
+    .conocenos-imagen-3-p2 {
+        font-size: 80%;
+        text-shadow: 0px 0px 9px white;
+        margin: 10%;
+    }
+
+    .conocenos-imagen-3-p3 {
+        font-size: 80%;
+        text-shadow: 0px 0px 9px white;
+        margin: 10%;
+    }
+
+
+
+    /*SECCION CONTACTANOS*/
+
+    .contactanos {
+        grid-area: seccion-contactanos;
+        border-top: 1px solid black;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor-whatsapp-contactanos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 7%;
+    }
+
+    .contactacnos__img {
+        width: 15%;
+    }
+
+    .contactanos__img-a {
+        text-decoration: none;
+        font-size: 110%;
+        color: rgb(63, 189, 162);
+        text-shadow: 1px 1px 1px black;
+    }
+
+    .contactanos__envianos-un-mensaje {
+        font-size: 100%;
+        margin-top: 3px;
+    }
+
+    .formulario-envianos-un-mensaje {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .nombre-apellido-asunto {
+        width: 90%;
+        height: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-left: 5%;
+    }
+
+    .texto {
+        height: 30%;
+        padding-left: 7%;
+        margin: 1% 0;
+    }
+
+    .enviar-mensaje {
+        width: 90%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-area {
+        margin-top: 4%;
+        height: 200%;
+        padding-left: 5%;
+    }
+
+    .boton {
+        width: 100%;
+        height: 30%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+
+
+    /* SECCION DONDE ESTAMOS*/
+
+    .donde-estamos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .donde-estamos__map {
+        width: 90%;
+        height: 80%;
+        order: 1;
+    }
+
+    .contenedor-de-titulo-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .donde-estamos__titulo {
+        font-size: 100%;
+        margin-top: 9%;
+    }
+
+    .donde-estamos__info {
+        font-size: 60%;
+        margin: 0 1% 10% 1%;
+    }
+
+    /*FOOTER DE CONOCENOS CONTACTANOS*/
+
+    .conocenos-contactanos-footer {
+        grid-area: footer2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .conocenos-contactanos-footer__p {
+        font-size: 60%;
+    }
+
+    /*FOOTER DE CONOCENOS CONTACTANOS fin */
+}
+
+
