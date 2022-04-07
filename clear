@@ -1,0 +1,23 @@
+[33mcommit c75760e2f5be088392c4665dd05740b82d01c3d6[m[33m ([m[1;36mHEAD -> [m[1;32manimaciones[m[33m, [m[1;31morigin/animaciones[m[33m)[m
+Author: German Camara <germancamarafernandez@gmail.com>
+Date:   Thu Apr 7 12:14:07 2022 -0300
+
+    Se agregra hover y active en boton iniciar sesion y link de facepagina iniciar sesion/ registrarme
+
+[33mcommit 6ae45ba52bf70c8fe462397518ea24a58ff6aa0b[m
+Author: German Camara <germancamarafernandez@gmail.com>
+Date:   Thu Apr 7 12:00:48 2022 -0300
+
+    Efectos en imagenes y sus textos en pagina conocenos
+
+[33mcommit 39f6f393bc65e5ce016251333ba502bdcba5e050[m
+Author: German Camara <germancamarafernandez@gmail.com>
+Date:   Thu Apr 7 11:34:57 2022 -0300
+
+    Efectos en Titulo y Parrafo de la seccion home de index.html
+
+[33mcommit 288166f5ed90adec0d40e1ef1e495c674f070e4b[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m
+Author: German Camara <germancamarafernandez@gmail.com>
+Date:   Tue Apr 5 16:13:50 2022 -0300
+
+    Guardo proyecto entero por primera vez

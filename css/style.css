@@ -120,7 +120,7 @@ ul.show {
 
 .seccion-home__pconectate:hover {
     color: rgb(251, 244, 232);
-    text-shadow:  .5px .5px 10px white;
+    text-shadow: .5px .5px 10px white;
     transform: scale(1.2);
 }
 
@@ -136,7 +136,7 @@ ul.show {
 
 .seccion-home__pconectate-parrafo:hover {
     color: rgb(251, 244, 232);
-    text-shadow:  .5px .5px 10px black;
+    text-shadow: .5px .5px 10px black;
     transform: scale(1.1);
 }
 
@@ -1772,7 +1772,7 @@ ul.show {
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
     }
 
     .donde-estamos__map {
@@ -2993,5 +2993,3 @@ ul.show {
 
     /*FOOTER DE CONOCENOS CONTACTANOS fin */
 }
-
-
