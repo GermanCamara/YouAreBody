@@ -114,6 +114,14 @@ ul.show {
     align-self: center;
     color: black;
     text-shadow: .5px .5px 30px white;
+    transition: all;
+    transition-duration: .5s;
+}
+
+.seccion-home__pconectate:hover {
+    color: rgb(251, 244, 232);
+    text-shadow:  .5px .5px 10px white;
+    transform: scale(1.2);
 }
 
 /* TEXTO PARRAFO */
@@ -122,6 +130,14 @@ ul.show {
     align-self: center;
     margin: 30px 10%;
     text-shadow: .5px .5px 10px white;
+    transition: all;
+    transition-duration: .5s;
+}
+
+.seccion-home__pconectate-parrafo:hover {
+    color: rgb(251, 244, 232);
+    text-shadow:  .5px .5px 10px black;
+    transform: scale(1.1);
 }
 
 /*CAJA CONTENEDORA NECESITAS AYUDA WHATSAPP */
