@@ -478,6 +478,11 @@ p {
 }
 
 /* IMAGEN DE FACE MANO CELULAR */
+.contenedor-imagen-red-social {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .contenedor-seccion-iniciar-sesion__img {
     width: 290px;
 }
