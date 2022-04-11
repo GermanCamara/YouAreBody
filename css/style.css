@@ -470,49 +470,32 @@ p {
 /*FOOTER DE CONOCENOS CONTACTANOS fin */
 
 /* INICIARSESIONREGISTRARME.HTML */
-
 /* Contenedor body pagina iniciar-sesion-registrarme */
 
-.iniciar-sesion-registrarme {
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    grid-template-areas:
-        "header"
-        "seccion-iniciar-sesion"
-        "footer";
-    grid-template-rows: 55px 82% 80px;
-    grid-template-columns: 100%;
-}
-
-/* CAJA CONTENEDORA SECCION INICIARSESION */
 .seccion-iniciar-sesion {
-    grid-area: seccion-iniciar-sesion;
-    background-color: rgba(219, 215, 215, 0.11);
-    display: flex;
-    justify-content: center;
-    padding: 2% 15%;
+    min-height: 81vh;  
+    background-color: rgba(219, 215, 215, 0.11);    
 }
 
 /* IMAGEN DE FACE MANO CELULAR */
+.contenedor-seccion-iniciar-sesion__img {
+    width: 290px;
+}
+
 .seccion-iniciar-sesion__img {
-    width: 390px;
-    margin-right: 3%;
+    width: 100%;
 }
 
 /* DIV CAJA INICIAR SESION FORMULARIO + REGISTRO DE FACE*/
-
 .contenedor-formulario-registro-no-registrado {
     background-color: rgba(219, 215, 215, 0);
-    margin-top: 1%;
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 270px;
 }
 
 .formulario-de-registro {
     border-radius: 10px;
-    height: 70%;
     background-color: white;
     border: 1px solid rgb(218, 215, 215);
     display: flex;
@@ -523,14 +506,15 @@ p {
 
 /* LOGO YOUAREBODY */
 .formulario-de-registro__logo {
-    width: 45%;
-    margin-top: 1%;
+    width: 125px;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
 .formulario-ingreso-session {
-    width: 70%;
-    height: 40%;
-    padding-bottom: 5%;
+    width: 190px;
+    height: 114px;
+    padding: 10px 0;
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid rgb(218, 215, 215);
@@ -538,19 +522,19 @@ p {
 
 .formulario-input {
     border: 1px solid rgb(218, 215, 215);
+    margin: 2px 0;
     padding-left: 5px;
-    height: 100%;
     border-radius: 4px;
-    margin: 1% 0;
     background-color: rgba(255, 255, 255, 0.651);
 }
 
 ::-webkit-input-placeholder {
-    font-size: x-small;
+    font-size: 8px;
 }
 
 .botton {
-    margin: 2% 0;
+    font-size: 10px;
+    margin: 5px 0;
     border-radius: 10px;
     background-color: rgb(140, 188, 216);
     color: white;
@@ -566,6 +550,7 @@ p {
 }
 
 .iniciar-sesion-con-facebook {
+    margin-top: 6px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -573,12 +558,12 @@ p {
 
 .formulario-de-registro__logo-face {
     width: 5%;
-    margin: 2%;
+    margin: 20px 5px;
 }
 
 .formulario-de-registro__logo-face-a {
     color: rgb(3, 70, 109);
-    font-size: 85%;
+    font-size: 10px;
     text-decoration: none;
 }
 
@@ -591,8 +576,8 @@ p {
 }
 
 .formulario-de-registro__logo-face-ap {
-    margin-bottom: 5%;
-    font-size: 85%;
+    margin-bottom: 25px;
+    font-size: 10px;
     text-decoration: none;
     color: black;
 }
@@ -601,7 +586,7 @@ p {
 
 .no-registrado {
     width: 100%;
-    height: 10%;
+    height: 40px;
     margin-top: 5%;
     border-radius: 10px;
     border: 1px solid rgb(218, 215, 215);
@@ -613,17 +598,17 @@ p {
 
 .no-registrado__p {
     margin-right: 2%;
-    font-size: 72%;
+    font-size: 9px;
 }
 
 .no-registrado__p-a {
-    font-size: 72%;
+    font-size: 9px;
     text-decoration: none;
 }
 
 .descargas-apple-android {
     align-self: center;
-    margin-top: 4%;
-    width: 80%;
+    margin-top: 15px;
+    width: 225px;
 }
 
