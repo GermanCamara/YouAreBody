@@ -51,64 +51,72 @@ ol, ul {
     text-decoration: none;
     color: black;
 }
-
 /* HEADER FIN */
+
 /* FOOTER */
+
 .footer {
+    min-height: 7vh;
     border-top: 1px solid black;
 }
 
 .footer__p {
-    font-size: x-small;
-    text-align: center;
+    font-size: 7px;
 }
 
 .footer__p-a {
     text-decoration: none;
 }
-
 /*FOOTER FIN*/
 
 /* INDEX.HTML */
 /* SECCION HOME */
 /* IMAGEN DE FONDO */
 .seccion-home {
+    min-height: 81vh;
     background-image: url('../multimedia/image/grupo-amigos-adolescente-concepto-trabajo-equipo-unidad-cancha-baloncesto_53876-20727.webp');
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
 }
 
 /* PARRAFO TITULO */
 .seccion-home__pconectate {
-    font-size: 3em;
+    font-size: 2.5em;
     padding-top: 1em;
-    align-self: center;
     color: black;
     text-shadow: .5px .5px 30px white;
     transition: all;
     transition-duration: .5s;
 }
 
+p {
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    text-align: center;
+}
+
+/*ANIMACION TITULO*/
 .seccion-home__pconectate:hover {
     color: rgb(251, 244, 232);
     text-shadow: .5px .5px 10px white;
     transform: scale(1.2);
+    text-align: center;
 }
 
 /* TEXTO PARRAFO */
 .seccion-home__pconectate-parrafo {
-    font-size: 1em;
-    align-self: center;
+    font-size: .8em;
     margin: 30px 10%;
     text-shadow: .5px .5px 10px white;
     transition: all;
     transition-duration: .5s;
 }
 
+/*ANIMACION PARRAFO*/
 .seccion-home__pconectate-parrafo:hover {
     color: rgb(251, 244, 232);
     text-shadow: .5px .5px 10px black;
@@ -117,31 +125,31 @@ ol, ul {
 
 /*CAJA CONTENEDORA NECESITAS AYUDA WHATSAPP */
 .seccion-home__div {
-    width: 250px;
-    height: 75px;
+    width: 200px;
+    height: 60px;
     position: absolute;
-    bottom: .9em;
+    bottom: .1em;
     right: .4em;
 }
 
 /* IMAGEN WHATSAPP */
 .seccion-home__div-img {
-    width: 30%;
+    width: 25%;
 }
 
 /* LINK WHATSAPP */
 .seccion-home__div-img-a {
     display: inline-block;
-    font-size: 1em;
+    font-size: .9em;
     text-decoration: none;
     color: white;
     position: absolute;
-    top: 25px;
+    top: 15px;
     right: 30px;
     text-shadow: .5px .5px 25px white;
 }
-
 /* INDEX.HTML FIN */
+
 /* CONOCENOSCONTACTANOS.HTML */
 /* Contenedor body pagina conocenos-contactanos */
 
