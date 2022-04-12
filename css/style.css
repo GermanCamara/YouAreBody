@@ -20,23 +20,20 @@
 
 /* Nav */
 .boton-menu {
-    margin-right: 30px;
-    font-size: 25px;
+    font-size: 17px;
     color: black;
     cursor: pointer;
-    display: none;
 }
 
-ul.show {
-    top: 65px;
-}
-
-dl, ol, ul {
+dl,
+ol,
+ul {
     margin-top: 0;
     margin-bottom: .5rem;
 }
 
-ol, ul {
+ol,
+ul {
     padding-left: 0;
 }
 
@@ -51,6 +48,7 @@ ol, ul {
     text-decoration: none;
     color: black;
 }
+
 /* HEADER FIN */
 
 /* FOOTER */
@@ -67,6 +65,7 @@ ol, ul {
 .footer__p-a {
     text-decoration: none;
 }
+
 /*FOOTER FIN*/
 
 /* INDEX.HTML */
@@ -148,25 +147,16 @@ p {
     right: 30px;
     text-shadow: .5px .5px 25px white;
 }
+
 /* INDEX.HTML FIN */
 
 /* CONOCENOSCONTACTANOS.HTML */
 /* Contenedor body pagina conocenos-contactanos */
 
-.conocenos-contactanos {
-    display: grid;
-    grid-template-areas:
-        "header"
-        "seccion-conocenos"
-        "seccion-contactanos"
-        "footer2";
-    grid-template-rows: 55px 58% 700px 70px;
-    grid-template-columns: 100%;
-}
 
 /* CAJA CONTENEDORA NECESITAS AYUDA WHATSAPP */
 .conocenos__div {
-    width: 20%;
+    width: 200px;
     position: fixed;
     top: 9%;
     right: 10px;
@@ -178,11 +168,12 @@ p {
 
 /* IMAGEN WHATSAPP */
 .conocenos__div-img {
-    width: 30%;
+    width: 25%;
 }
 
 /* LINK WHATSAPP */
 .conocenos__div-img-a {
+    font-size: 10px;
     text-decoration: none;
     color: black;
     text-align: center;
@@ -192,19 +183,10 @@ p {
 /* IMAGENES Y PARRAFOS */
 /* CAJA CONTENEDORA DE IMAGEN 1 + TITULO + PARRAFO */
 .conocenos {
-    grid-area: seccion-conocenos;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 7% 0 7%;
-}
-
-.contenedor-imagen {
-    height: 100%;
+    padding: 0 50px;
 }
 
 .contenedor-imagen-1 {
-    display: flex;
     transition: all;
     z-index: 6;
     transition-duration: 1s;
@@ -225,10 +207,7 @@ p {
 }
 
 .contenedor-textos-imagen-1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 0 10%;
     transition-duration: 1s;
 }
 
@@ -237,21 +216,16 @@ p {
 }
 
 .conocenos-imagen1-titulo {
-    font-size: 15px;
-    margin-bottom: 5%;
-    margin-left: 13%;
+    font-size: 9px;
 }
 
 .conocenos-imagen1-parrafo {
-    font-size: smaller;
-    margin: 0 5% 5% 20%;
+    font-size: 9px;
 }
 
 /* CAJA CONTENEDORA DE IMAGEN 2 + PARRAFO */
 
 .contenedor-imagen-2 {
-    display: flex;
-    flex-direction: row-reverse;
     transition: all;
     transition-duration: 1.5s;
 }
@@ -263,43 +237,32 @@ p {
 }
 
 .conocenos-imagen-2 {
-    width: 53%;
+    width: 51%;
     position: relative;
-    bottom: 4%;
     z-index: 5;
     border-radius: 20px;
 }
 
-.contenedor-textos-imagen2 {
-    margin-top: 2%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.contenedor-textos-imagen-2 {
     transition: all;
     transition-duration: 1s;
 }
 
-.contenedor-textos-imagen2:hover {
+.contenedor-textos-imagen-2:hover {
     transform: scale(1.1);
 }
 
 .conocenos-imagen-2-titulo {
-    font-size: smaller;
-    margin-bottom: 4%;
+    font-size: 9px;
 }
-
 
 .conocenos-imagen-2-parrafo {
-    font-size: 80%;
-    margin: 0 10% 7% 10%;
+    padding: 0 10%;
+    font-size: 7px;
 }
 
-
 /* CAJA CONTENEDORA DE IMAGEN 3 + 3 PARRAFOS */
-
 .contenedor-imagen-3 {
-    display: flex;
     transition: all;
     transition-duration: 1s;
 }
@@ -311,85 +274,75 @@ p {
 }
 
 .conocenos-imagen-3 {
-    width: 53%;
+    width: 55%;
     position: relative;
-    bottom: 15%;
+    bottom: 25px;
     border-radius: 20px;
 }
 
-.contenedor-textos-imagen3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 0 5% 6% 5%;
+.contenedor-textos-imagen-3 {
+    margin-left: 5%;
+    margin-bottom: 3%;
     transition: all;
     transition-duration: 1s;
 }
 
-.contenedor-textos-imagen3:hover {
+.contenedor-textos-imagen-3:hover {
     transform: scale(1.1);
 }
 
 .conocenos-imagen-3-p1 {
-    font-size: smaller;
-
+    font-size: 8px;
 }
 
 .conocenos-imagen-3-p2 {
-    font-size: smaller;
-
+    font-size: 8px;
 }
 
 .conocenos-imagen-3-p3 {
-    font-size: smaller;
-
+    font-size: 8px;
 }
 
 /*SECCION CONTACTANOS*/
 
 .contactanos {
-    grid-area: seccion-contactanos;
     border-top: 1px solid black;
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    height: 700px;
 }
 
 .contenedor-whatsapp-contactanos {
+    margin-top: 10px;
     display: flex;
     align-items: center;
 }
 
 .contactacnos__img {
-    width: 10%;
+    width: 7%;
     margin-left: 15%;
 }
 
 .contactanos__img-a {
     text-decoration: none;
-    font-size: 160%;
+    font-size: 20px;
     color: rgb(63, 189, 162);
     text-shadow: 1px 1px 1px black;
 }
 
 .contactanos__envianos-un-mensaje {
-    font-size: 150%;
-    margin-left: 40%;
-    margin-top: -20px;
+    font-size: 15px;
+    margin-top: -10px;
 }
 
 .formulario-envianos-un-mensaje {
-    width: 100%;
-    height: 300px;
+    height: 200px;
     display: flex;
     justify-content: center;
 }
 
 .nombre-apellido-asunto {
-    width: 300px;
+    width: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -402,21 +355,21 @@ p {
 }
 
 .enviar-mensaje {
-    width: 500px;
+    width: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .text-area {
-    margin-top: 4%;
     height: 50%;
     padding-left: 5%;
 }
 
 .boton {
+    margin-top: 10px;
+    font-size: 10px;
     height: 10%;
-    margin-bottom: 3%;
 }
 
 
@@ -446,25 +399,17 @@ p {
 }
 
 .donde-estamos__titulo {
-    font-size: 150%;
+    font-size: 15px;
     margin-bottom: 5%;
 }
 
 .donde-estamos__info {
-    font-size: 100%;
+    font-size: 10px;
 }
 
 /*FOOTER DE CONOCENOS CONTACTANOS*/
-
-.conocenos-contactanos-footer {
-    grid-area: footer2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .conocenos-contactanos-footer__p {
-    font-size: 90%;
+    font-size: 7px;
 }
 
 /*FOOTER DE CONOCENOS CONTACTANOS fin */
@@ -473,16 +418,11 @@ p {
 /* Contenedor body pagina iniciar-sesion-registrarme */
 
 .seccion-iniciar-sesion {
-    min-height: 81vh;  
-    background-color: rgba(219, 215, 215, 0.11);    
+    min-height: 81vh;
+    background-color: rgba(219, 215, 215, 0.11);
 }
 
 /* IMAGEN DE FACE MANO CELULAR */
-.contenedor-imagen-red-social {
-    display: flex;
-    justify-content: flex-end;
-}
-
 .contenedor-seccion-iniciar-sesion__img {
     width: 290px;
 }
@@ -617,3 +557,99 @@ p {
     width: 225px;
 }
 
+@media screen and (max-width: 767px) {
+    .row {
+        --bs-gutter-x: 0;
+    }
+    .conocenos {
+        width: 100%;
+        padding: 0;
+    }
+
+    .contenedor-imagen-1 {
+        background-image: url(../multimedia/image/unidosluz.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center top;
+        transition: none;
+        height: 250px;
+    }
+
+    .contenedor-imagen-2 {
+        background-image: url(../multimedia/image/ayudamano.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center top;
+        height: 250px;
+    }
+
+    .contenedor-imagen-3 {
+        background-image: url(../multimedia/image/unidosmanoslevantadas.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center top;
+        height: 250px;
+        color: antiquewhite;
+        text-shadow: 1px 1px 5px black;
+        padding: 0 15%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .contactanos {
+        height: 620px;
+    }
+
+    .formulario-envianos-un-mensaje {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nombre-apellido-asunto {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin-top: 100px;
+        margin-left: 5%;
+        width: 60%;
+    }
+
+    .texto {
+        height: 30px;
+        margin: 1% 0;
+    }
+
+    .enviar-mensaje {
+        width: 60%;
+    }
+
+    .text-area {
+        height: 100px;
+    }
+
+    .boton {
+        height: 25px;
+    }
+
+    .donde-estamos {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+
+    .contenedor-de-titulo-info {
+        width: 100%;
+    }
+
+    .donde-estamos__titulo {
+        margin-bottom: 10px;
+    }
+
+    .donde-estamos__map {
+        width: 90%;
+        height: 70%;
+    }
+}
