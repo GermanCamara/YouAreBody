@@ -25,6 +25,7 @@
     cursor: pointer;
 }
 
+/* Elementos de Bootstrap a modificar */
 dl,
 ol,
 ul {
@@ -151,10 +152,11 @@ p {
 /* INDEX.HTML FIN */
 
 /* CONOCENOSCONTACTANOS.HTML */
-/* Contenedor body pagina conocenos-contactanos */
-
-
 /* CAJA CONTENEDORA NECESITAS AYUDA WHATSAPP */
+.conocenos {
+    padding: 0 50px;
+}
+
 .conocenos__div {
     width: 200px;
     position: fixed;
@@ -182,10 +184,6 @@ p {
 
 /* IMAGENES Y PARRAFOS */
 /* CAJA CONTENEDORA DE IMAGEN 1 + TITULO + PARRAFO */
-.conocenos {
-    padding: 0 50px;
-}
-
 .contenedor-imagen-1 {
     transition: all;
     z-index: 6;
@@ -224,7 +222,6 @@ p {
 }
 
 /* CAJA CONTENEDORA DE IMAGEN 2 + PARRAFO */
-
 .contenedor-imagen-2 {
     transition: all;
     transition-duration: 1.5s;
@@ -304,7 +301,6 @@ p {
 }
 
 /*SECCION CONTACTANOS*/
-
 .contactanos {
     border-top: 1px solid black;
     position: relative;
@@ -374,7 +370,6 @@ p {
 
 
 /* SECCION DONDE ESTAMOS*/
-
 .donde-estamos {
     height: 40%;
     border-top: 1px solid black;
@@ -456,6 +451,7 @@ p {
     margin-bottom: 10px;
 }
 
+/* Formulario Iniciar Sesion / Registrarme */
 .formulario-ingreso-session {
     width: 190px;
     height: 114px;
@@ -528,7 +524,6 @@ p {
 }
 
 /* CAJA DIV PARA NO REGISTRADOS */
-
 .no-registrado {
     width: 100%;
     height: 40px;
@@ -557,6 +552,7 @@ p {
     width: 225px;
 }
 
+/* Consulta de Medios para pagina Conocenos Contactanos*/
 @media screen and (max-width: 767px) {
     .row {
         --bs-gutter-x: 0;
