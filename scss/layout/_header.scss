@@ -1,0 +1,44 @@
+/* HEADER */
+.header {
+
+    /* IMAGEN LOGO*/
+    .logo-you-are-body {
+        width: 140px;
+    }
+
+    .header__nav-ul-li {
+        margin: 0 10px;
+        list-style: none;
+        font-size: 7px;
+        text-align: center;
+
+        .header__nav-ul-li-a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+
+    .boton-menu {
+        font-size: 17px;
+        color: black;
+        cursor: pointer;
+    }
+
+    border-bottom: 1px solid black;
+}
+
+/* Elementos de Bootstrap a modificar */
+dl,
+ol,
+ul {
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+
+ol,
+ul {
+    padding-left: 0;
+}
+
+
+/* HEADER FIN */
