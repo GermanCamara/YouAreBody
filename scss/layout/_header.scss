@@ -1,15 +1,17 @@
 /* HEADER */
-.header {
+@import '../base/mapas';
 
+.header {
+    min-height: 9vh;
     /* IMAGEN LOGO*/
     .logo-you-are-body {
-        width: 140px;
+        width: 125px;
     }
 
     .header__nav-ul-li {
         margin: 0 10px;
         list-style: none;
-        font-size: 7px;
+        font-size: map-get($font-sizes , pequeño);
         text-align: center;
 
         .header__nav-ul-li-a {

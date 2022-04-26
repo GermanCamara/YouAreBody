@@ -1,23 +1,26 @@
 /* FOOTER */
+@import '../base/mapas';
 
 .footer {
-    min-height: 7vh;
+    min-height: 9vh;
     border-top: 1px solid black;
 
     .footer__p {
-        font-size: 7px;
-
-        .footer__p-a {
-            text-decoration: none;
-        }
+        margin-bottom: 0;
+        font-size: map-get($font-sizes , pequeño)    
     }
 
+    .footer__p-a {
+        text-decoration: none;
+    }
+    
 }
 
 /*FOOTER FIN*/
 
 /*FOOTER DE CONOCENOS CONTACTANOS*/
 .conocenos-contactanos-footer__p {
-    font-size: 7px;
+    font-size: map-get($font-sizes , pequeño);
 }
+
 /*FOOTER DE CONOCENOS CONTACTANOS fin */

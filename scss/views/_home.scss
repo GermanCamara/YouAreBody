@@ -2,7 +2,7 @@
 /* SECCION HOME */
 /* IMAGEN DE FONDO */
 .seccion-home {
-    min-height: 81vh;
+    min-height: 77vh;
     background-image: url('../multimedia/image/grupo-amigos-adolescente-concepto-trabajo-equipo-unidad-cancha-baloncesto_53876-20727.webp');
     background-size: cover;
     background-repeat: no-repeat;
@@ -10,7 +10,7 @@
 
     /* PARRAFO TITULO */
     .seccion-home__pconectate {
-        font-size: 2.5em;
+        font-size: 2.1em;
         padding-top: 1em;
         color: black;
         text-shadow: .5px .5px 30px white;
@@ -25,7 +25,7 @@
             text-align: center;
         }
     }
-
+    /* ----- modificacion bootstrap ----- */
     p {
         display: block;
         margin-block-start: 0;
@@ -37,12 +37,11 @@
 
     /* TEXTO PARRAFO */
     .seccion-home__pconectate-parrafo {
-        font-size: .8em;
+        font-size: .7em;
         margin: 30px 10%;
         text-shadow: .5px .5px 10px white;
         transition: all;
         transition-duration: .5s;
-
 
         /*ANIMACION PARRAFO*/
         &:hover {
@@ -53,29 +52,29 @@
     }
 
     /*CAJA CONTENEDORA NECESITAS AYUDA WHATSAPP */
-.seccion-home__div {
-    width: 200px;
-    height: 60px;
-    position: absolute;
-    bottom: .1em;
-    right: .4em;
-}
+    .seccion-home__div {
+        width: 200px;
+        height: 60px;
+        position: absolute;
+        bottom: .1em;
+        right: .4em;
 
-/* IMAGEN WHATSAPP */
-.seccion-home__div-img {
-    width: 25%;
-}
+        /* IMAGEN WHATSAPP */
+        .seccion-home__div-img {
+            width: 25%;
+        }
 
-/* LINK WHATSAPP */
-.seccion-home__div-img-a {
-    display: inline-block;
-    font-size: .9em;
-    text-decoration: none;
-    color: white;
-    position: absolute;
-    top: 15px;
-    right: 30px;
-    text-shadow: .5px .5px 25px white;
-}
+        /* LINK WHATSAPP */
+        .seccion-home__div-img-a {
+            display: inline-block;
+            font-size: .9em;
+            text-decoration: none;
+            color: white;
+            position: absolute;
+            top: 15px;
+            right: 30px;
+            text-shadow: .5px .5px 25px white;
+        }
+    }
 }
 /* INDEX.HTML FIN */
