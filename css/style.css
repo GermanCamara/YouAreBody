@@ -53,7 +53,8 @@ ul {
 }
 .footer .footer__p {
   margin-bottom: 0;
-  font-size: 0.63rem;
+  font-size: 1rem;
+  text-align: center;
 }
 .footer .footer__p-a {
   text-decoration: none;
@@ -62,7 +63,9 @@ ul {
 /*FOOTER FIN*/
 /*FOOTER DE CONOCENOS CONTACTANOS*/
 .conocenos-contactanos-footer__p {
-  font-size: 0.63rem;
+  font-size: 1rem;
+  margin-bottom: 0;
+  padding: 10px;
 }
 
 /*FOOTER DE CONOCENOS CONTACTANOS fin */
@@ -144,19 +147,29 @@ ul {
 /* INDEX.HTML FIN */
 /* CONOCENOSCONTACTANOS.HTML */
 /* CAJA CONTENEDORA NECESITAS AYUDA WHATSAPP */
+.seccion-iniciar-sesion .formulario-ingreso-session, .seccion-iniciar-sesion .formulario-de-registro, .seccion-iniciar-sesion .contenedor-formulario-registro-no-registrado {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.seccion-iniciar-sesion .no-registrado, .seccion-iniciar-sesion .iniciar-sesion-con-facebook, .conocenos__div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .conocenos {
-  padding: 0 50px;
+  padding: 0 10%;
 }
 
 .conocenos__div {
-  width: 200px;
+  width: 300px;
   position: fixed;
   top: 9%;
   right: 10px;
   z-index: 100;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /* IMAGEN WHATSAPP */
@@ -166,7 +179,7 @@ ul {
 
 /* LINK WHATSAPP */
 .conocenos__div-img-a {
-  font-size: 10px;
+  font-size: 0.85rem;
   text-decoration: none;
   color: black;
   text-align: center;
@@ -205,11 +218,12 @@ ul {
 }
 
 .conocenos-imagen1-titulo {
-  font-size: 9px;
+  text-align: center;
+  font-size: 0.85rem;
 }
 
 .conocenos-imagen1-parrafo {
-  font-size: 9px;
+  font-size: 0.63rem;
 }
 
 /* CAJA CONTENEDORA DE IMAGEN 2 + PARRAFO */
@@ -236,17 +250,15 @@ ul {
   transition-duration: 1s;
 }
 
-.contenedor-textos-imagen-2:hover {
-  transform: scale(1.1);
-}
-
 .conocenos-imagen-2-titulo {
-  font-size: 9px;
+  font-size: 0.85rem;
+  text-align: center;
+  margin-top: 2%;
 }
 
 .conocenos-imagen-2-parrafo {
   padding: 0 10%;
-  font-size: 7px;
+  font-size: 0.63rem;
 }
 
 /* CAJA CONTENEDORA DE IMAGEN 3 + 3 PARRAFOS */
@@ -280,15 +292,15 @@ ul {
 }
 
 .conocenos-imagen-3-p1 {
-  font-size: 8px;
+  font-size: 0.63rem;
 }
 
 .conocenos-imagen-3-p2 {
-  font-size: 8px;
+  font-size: 0.63rem;
 }
 
 .conocenos-imagen-3-p3 {
-  font-size: 8px;
+  font-size: 0.63rem;
 }
 
 /*SECCION CONTACTANOS*/
@@ -318,8 +330,8 @@ ul {
 }
 
 .contactanos__envianos-un-mensaje {
-  font-size: 15px;
-  margin-top: -10px;
+  font-size: 0.85rem;
+  text-align: center;
 }
 
 .formulario-envianos-un-mensaje {
@@ -329,7 +341,7 @@ ul {
 }
 
 .nombre-apellido-asunto {
-  width: 200px;
+  width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -342,7 +354,7 @@ ul {
 }
 
 .enviar-mensaje {
-  width: 300px;
+  width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -361,7 +373,6 @@ ul {
 
 /* SECCION DONDE ESTAMOS*/
 .donde-estamos {
-  height: 40%;
   border-top: 1px solid black;
   display: flex;
   justify-content: center;
@@ -394,7 +405,7 @@ ul {
 
 /*FOOTER DE CONOCENOS CONTACTANOS*/
 .conocenos-contactanos-footer__p {
-  font-size: 7px;
+  font-size: 0.85rem;
 }
 
 /*FOOTER DE CONOCENOS CONTACTANOS fin */
@@ -438,11 +449,8 @@ ul {
   }
 }
 @media screen and (max-width: 576px) {
-  .contactanos {
-    height: 620px;
-  }
-
   .formulario-envianos-un-mensaje {
+    height: 290px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -453,7 +461,6 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    margin-top: 100px;
     margin-left: 5%;
     width: 60%;
   }
@@ -476,7 +483,6 @@ ul {
   }
 
   .donde-estamos {
-    margin-top: 100px;
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
@@ -503,7 +509,7 @@ ul {
   align-items: center;
 }
 
-.seccion-iniciar-sesion .no-registrado, .seccion-iniciar-sesion .iniciar-sesion-con-facebook {
+.seccion-iniciar-sesion .no-registrado, .seccion-iniciar-sesion .iniciar-sesion-con-facebook, .conocenos__div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -519,13 +525,13 @@ ul {
   /* CAJA DIV PARA NO REGISTRADOS */
 }
 .seccion-iniciar-sesion .contenedor-seccion-iniciar-sesion__img {
-  outline: 1px solid red;
-  max-height: 100px;
+  height: 100%;
 }
-.seccion-iniciar-sesion .contenedor-seccion-iniciar-sesion__img .seccion-iniciar-sesion__img {
-  transform: scale(0.6);
+.seccion-iniciar-sesion .seccion-iniciar-sesion__img {
+  width: 370px;
+  height: 95%;
   position: relative;
-  left: 130px;
+  top: 3%;
 }
 .seccion-iniciar-sesion .contenedor-formulario-registro-no-registrado {
   min-height: 90%;

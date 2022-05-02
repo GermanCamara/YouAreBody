@@ -1,13 +1,15 @@
 /* FOOTER */
 @import '../base/mapas';
 
+
 .footer {
     min-height: 9vh;
     border-top: 1px solid black;
 
     .footer__p {
         margin-bottom: 0;
-        font-size: map-get($font-sizes , pequeño)    
+        font-size: map-get($font-sizes , grande);
+        text-align: center;    
     }
 
     .footer__p-a {
@@ -20,7 +22,9 @@
 
 /*FOOTER DE CONOCENOS CONTACTANOS*/
 .conocenos-contactanos-footer__p {
-    font-size: map-get($font-sizes , pequeño);
+    font-size: map-get($font-sizes , grande);
+    margin-bottom: 0;
+    padding: 10px;
 }
 
 /*FOOTER DE CONOCENOS CONTACTANOS fin */
