@@ -15,14 +15,20 @@
         text-align: center;
 
         .header__nav-ul-li-a {
+            margin: 10px 0;
+            padding: 0;
             text-decoration: none;
             color: black;
         }
     }
 
-    .boton-menu {
-        font-size: 17px;
-        color: black;
+    .nav-boots {
+        flex-grow: 0;
+    }
+
+    nav .boton-menu {
+        transform: scale(.7);
+        box-shadow: 1px 1px 3px grey;
         cursor: pointer;
     }
 

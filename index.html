@@ -42,7 +42,8 @@
     <!-- ------------------------------ OPENGRAPH ------------------------------ -->
     <meta property="og:type" content="landing">
     <meta property="og:title" content="YouAreBody / Conectate con la comunidad cristiana de todo el mundo.">
-    <meta property="og:Description" content="Tu eres parte, conectate con otros, unite a hermanos y a la iglesia en todo el mundo, te invito a un gran desafío, unidos es más fácil. Tu eres cuerpo, YouAreBody">
+    <meta property="og:Description"
+        content="Tu eres parte, conectate con otros, unite a hermanos y a la iglesia en todo el mundo, te invito a un gran desafío, unidos es más fácil. Tu eres cuerpo, YouAreBody">
     <meta property="og:url" content="https://youarebody.000webhostapp.com/">
     <meta property="og:image" content="https://youarebody.000webhostapp.com/multimedia/image/unidosmanoslevantadas.jpg">
     <!-- ------------------------ SEO FIN ------------------------ -->
@@ -52,28 +53,35 @@
 <body class="container-fluid gx-0 index">
     <h1 class="d-none">youarebody</h1>
     <!-- ------------------------------- HEADER -------------------------------- -->
-    <!-- --------------------------- LOGOYouAreBody ---------------------------- -->
     <header class="row header">
-        <div class="col-12 p-2 d-flex justify-content-center align-items-center">
-            <div class="container__logo-you-are-body">
+            <!-- --------------------------------- Nav Bootstrap--------------------------------- -->
+        <nav class="col-12 p-2 d-flex justify-content-center align-items-center navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html">
                 <img class="logo-you-are-body" src="multimedia/image/youarebodylogorecortada.png" alt="youarebodylogo">
-            </div>
-            <!-- --------------------------------- Nav --------------------------------- -->
-            <nav class="d-flex d-none d-md-block">
-                <ul class="d-inline-flex">
-                    <li class="header__nav-ul-li"><a class="header__nav-ul-li-a" href="index.html">Home</a></li>
-                    <li class="header__nav-ul-li"><a class="header__nav-ul-li-a"
-                            href="conocenos-contactanos.html">Conócenos</a></li>
-                    <li class="header__nav-ul-li"><a class="header__nav-ul-li-a"
-                            href="conocenos-contactanos.html#contactanos">Contáctanos</a></li>
-                    <li class="header__nav-ul-li"><a class="header__nav-ul-li-a"
-                            href="iniciar-sesion-registrarme.html">Iniciar Sesión / Registrarme</a></li>
+            </a>
+            <button class="navbar-toggler boton-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse nav-boots" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item header__nav-ul-li">
+                        <a class="nav-link header__nav-ul-li-a" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item header__nav-ul-li">
+                        <a class="nav-link header__nav-ul-li-a" href="conocenos-contactanos.html">Conócenos</a>
+                    </li>
+                    <li class="nav-item header__nav-ul-li">
+                        <a class="nav-link header__nav-ul-li-a"
+                            href="conocenos-contactanos.html#contactanos">Contáctanos</a>
+                    </li>
+                    <li class="nav-item header__nav-ul-li">
+                        <a class="nav-link header__nav-ul-li-a" href="iniciar-sesion-registrarme.html">Iniciar Sesión /
+                            Registrarme</a>
+                    </li>
                 </ul>
-            </nav>
-            <div class="boton-menu d-md-none ms-4">
-                <i class="fa-solid fa-bars"></i>
             </div>
-        </div>
+        </nav>
     </header>
     <!-- ----------------------------- HEADER FIN ------------------------------ -->
     <!-- ------------------------------- SECTION HOME ------------------------------- -->
